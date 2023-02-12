@@ -185,3 +185,34 @@ li :hover{
 .container {
   padding: 2px 16px;
 }
+.person {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  margin: 0 10px;
+}
+.imagenPresentacion{
+  width: 300px;
+  height: 300px;
+}
+.div-izquierdo {
+  display: inline-block;
+  width: 31%;
+  height: 100px;
+}
+
+.div-centro {
+  display: inline-block;
+  width: 31%;
+  height: 100px;
+
+}
+
+.div-derecho {
+  display: inline-block;
+  width: 31%;
+  height: 100px;
+}
+.descripcionPersonal{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
