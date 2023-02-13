@@ -216,3 +216,22 @@ li :hover{
 .descripcionPersonal{
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
+
+
+/* Estilo para el contenido principal */
+#main-content {
+  width: 75%;
+  float: left;
+  padding: 20px;
+}
+
+/* Limpieza */
+#clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#textoPersonal{
+  text-align: left;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
