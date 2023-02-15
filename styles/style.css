@@ -235,3 +235,19 @@ li :hover{
   text-align: left;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
+.error {
+  border: 2px solid rgb(180, 0, 0);
+}
+.containerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#mi-formulario {
+  background-color: #120075; 
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  width: 20%;
+  padding: 10px;
+}
