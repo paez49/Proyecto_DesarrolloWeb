@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!----======== CSS ======== -->
-        <link rel="stylesheet" href="styles/style.css">
-        <!----===== Boxicons CSS ===== -->
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
-            rel='stylesheet'>
-        <!--<title>Dashboard Sidebar Menu</title>-->
-    </head>
-    <header>
-        <div id="logo">
-        </span><a class="neonImg" href="index.html"><span class="image">
-                <img class="logoIMG" src="assets/logos/logo-normal.png" alt="">
-            </a></div>
-        <nav>
-            <ul>
-                <li><a class=neonText href="team.html">Grupo</a></li>
-                <li><a href="project.html">Proyecto</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-                <li><a href="team.html">Grupo</a></li>
-                <li><div class="slide1"></div></li>
-                <li><a href="project.html">Proyecto</a></li>
-                <li><div class="slide1"></div></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </div>
-    </header>
-    <body>
-        <h1 class="descripcionPersonal">ASODDDDDDDDDDDDDDDDD</h1>
-        <h2>Contactenos</h2>
-        <div class="containerContact">
-            
-            <form name="miFormulario" onsubmit="return validarFormulario()" id="mi-formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre"><br>
-
-                <label for="email">Email:</label>
-                <input type="email" name="email"><br>
-
-                <label for="numero">Numero:</label>
-                <input type="text" name="numero"><br>
-
-                <label for="comentario">Comentarios:</label>
-                <input type="text" name="comentario"><br>
-                <input type="submit" value="Enviar">
-            </form>
-      
-    </div>
-       
-
-    </body>
-    <script src="scripts/script.js"></script>
-
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!----======== CSS ======== -->
+      <link rel="stylesheet" href="styles/style.css">
+     <link rel="stylesheet" href="styles/form.css">
+      <!----===== Boxicons CSS ===== -->
+      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+         rel='stylesheet'>
+      <!--<title>Dashboard Sidebar Menu</title>-->
+   </head>
+   <header>
+  <div id="logo">
+    </span><a class="neonImg" href="index.html"><span class="image">
+          <img class="logoIMG" src="assets/logos/logo-normal.png" alt=""> </a></div>
+  <nav>
+    <ul>
+      <li><a class=neonText href="team.html">Grupo</a></li>
+      <li><a href="project.html">Proyecto</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+      <li><a href="team.html">Grupo</a></li>
+      <li><div class ="slide1"></div></li>
+      <li><a href="project.html">Proyecto</a></li>
+      <li><div class ="slide1"></div></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+   <body>
+    <form action="/" class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+        <h1>Contactanos</h1>
+        <input type="text" placeholder="Adrian Jaimes">
+        <input type="email" placeholder="adrian@hotmail.com">
+        <input type="number" placeholder="3131843918">
+        <textarea placeholder="Mensaje...." rows="5"></textarea>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+   <script src="scripts/forms.js"></script>
+     <script src="scripts/script.js"></script>
 </html>
