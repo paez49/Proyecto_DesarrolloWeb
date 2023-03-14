@@ -1,34 +1,28 @@
-/* Google Font Import - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');*{
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bungee Shade', cursive;
 }
-
 :root{
+  
     /* ===== Colors ===== */
     --notBlack: #1f1f19;
     --lightBlue :#A1E5F5;
     --electricBlue:#7DF9FF;
     --body-color: #101014;
     --topbar-color: #020102;
-    --primary-color: #008080;
-    --primary-color-light: #008080;
+    --primary-color: #3EA5A5;
+    --primary-color-light: #3EA5A5;
     --toggle-color: #DDD;
     --text-color: #1d1b1b;
 }
-@keyframes headFlick {
-  0% { box-shadow:0 20px 50px rgba(10, 10, 10, 0.8);}
-  25% { box-shadow:0 20px 50px rgba(20, 20, 20, 0.6);}
-  50% { box-shadow:0 20px 50px rgba(30, 30, 30, 0.4);}
-  75% { box-shadow:0 20px 50px rgba(20, 20, 20, 0.6);}
-  100% { box-shadow:0 20px 50px rgba(10, 10, 10, 0.8);}
-}
 /* Flickering animation */
-@keyframes flicker {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+@keyframes flicker {0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
       text-shadow:
       0 0 7px #fff,
@@ -40,19 +34,48 @@
       0 0 102px #5271ff,
       0 0 151px #5271ff;
   
-  }
-  
-  20%, 24%, 55% {        
+  }20%, 24%, 55% {        
       text-shadow: none;
-  }    
+  }}
+@keyframes flicker2 {
+  0% { box-shadow:0 20px 50px rgba(0, 0, 0, 0.8);}
+  25% { box-shadow:0 20px 50px rgba(0, 0, 255, 0.8);}
+  50% { box-shadow:0 20px 50px rgba(0, 255, 0, 0.8);}
+  75% { box-shadow:0 20px 50px rgba(255, 0, 0, 0.8);}
+  100% { box-shadow:0 20px 50px rgba(100, 100, 100, 0.8);}}
+@keyframes godCheems {
+  0% { box-shadow:0 0px 50px rgba(247, 247, 9, 0.1);}
+  25% { box-shadow:0 0px 50px rgba(247, 247, 9, 0.3);}
+  50% { box-shadow:0 0px 50px rgba(247, 247, 9,  0.5);}
+  75% { box-shadow:0 0px 50px rgba(247, 247, 9,  0.7);}
+  100% { box-shadow:0 0px 50px rgba(247, 247, 9,  0.9);}
 }
+@keyframes circle-size {
+    from {
+        width: 250px;
+        height: 250px;
+    }
+    to {
+        width: 300px;
+        height: 300px;
+    }
+}
+@keyframes shadow-rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 body {
   top: 100px;
   background-color: var(--body-color);
   color: white;
   position:relative;
 }
-
+/* Header */
 header a {
   text-decoration: none;
 }
@@ -65,6 +88,7 @@ header {
   position:fixed;
   padding: 0 20px;
   background-color: var(--topbar-color);
+  background: linear-gradient(45deg, var(--topbar-color) 0%, #0d070d 50%,var(--topbar-color) 100%);
   height: 100px;
   width: 100%;
   display: flex;
@@ -88,8 +112,11 @@ header {
   align-items: center;
   margin-top:15px;
   text-align: center;
-  background-color: var(--electricBlue);
-  filter: drop-shadow(4px 4px 8px #FFF);
+  background-color: var(--lightBlue);
+
+}
+#logo:hover {
+    
 }
 neonImage{
   filter: drop-shadow(4px 4px 8px #EE21);
@@ -111,20 +138,18 @@ neonImage{
   color: var(--primary-color-light);
   font-size: 40px;
 }
-
-
  ul li:hover{
   transform: scale(1.5);
   transition: 0.3s;
   color: #fff;
   animation: flicker 1.5s infinite alternate;
 }
-
+/* Header */
+/*Coso de hamburguesa en telefonos*/
 #hamburger-icon {
   margin: auto 0;
   display: none;
   cursor: pointer;
-  
 }
 #hamburger-icon div {
   width: 35px;
@@ -138,7 +163,6 @@ neonImage{
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
   transform: rotate(-45deg) translate(-6px, 6px);
 }
-
 .open .bar2 {
   opacity: 0;
 }
@@ -164,7 +188,6 @@ neonImage{
 .mobile-menu li {
   margin-bottom: 10px;
 }
-
 .aboutList{
   display:grid;
   grid-column-gap: 1rem;
@@ -172,47 +195,7 @@ neonImage{
 .container {
   padding: 2px 16px;
 }
-.person {
-  display: flex;
-  width: 30%;
-  text-align: center;
-  margin: 0 10px;
-}
-.imagenPresentacion{
-  width: 300px;
-  height: 300px;
-  padding: 0.8rem;
-  margin: 1.8rem auto;
-  border-radius: 40px;
-  align-items: center;  
-}
-.displayPersona {
-  border-radius: 20px;
-  background-color: var(--body-color);
-  align-items: center;  
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-  padding: 0px 1.8rem;
-  margin: 2.8rem auto;
-}
-
-.descripcionPersonal{
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
-.members{
-    width: fit-content;
-    display: grid;
-    text-align:center;
-    align-items: center;    
-    gap: 3rem;
-    border-radius: 0.7rem;
-    margin: 1.8rem auto;
-}
-
+/*Coso de hamburguesa en telefonos*/
 /* Estilo para el contenido principal */
 #main-content {
   width: 75%;
@@ -225,62 +208,52 @@ neonImage{
   clear: both;
   display: table;
 }
-.textoPersonal{
-  text-align: left;
-  font-family: "Sans-serif", cursive, sans-serif;
-	color: #EA899A;
-}
-.tituloTeam{
-	text-align: center;
-	color: #EA899A;
-}
 .error {
   border: 2px solid rgb(180, 0, 0);
 }
-.containerContact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.itemsproyecto p a { 
+	font-family: "pt serif";
+	font-size: 35px;
+	color:  #121212;
+	background-color: #454dbf;
 }
-#mi-formulario {
-  background-color: #120075; 
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  width: 20%;
-  padding: 10px;
+.textoproyecto p{
+		font-family: "Sans-serif", cursive, sans-serif;
+	color: #d4d4d4;
+	border-color:#a88585
 }
-
-@keyframes flicker2 {
-  0% { box-shadow:0 20px 50px rgba(0, 0, 0, 0.8);}
-  25% { box-shadow:0 20px 50px rgba(0, 0, 255, 0.8);}
-  50% { box-shadow:0 20px 50px rgba(0, 255, 0, 0.8);}
-  75% { box-shadow:0 20px 50px rgba(255, 0, 0, 0.8);}
-  100% { box-shadow:0 20px 50px rgba(100, 100, 100, 0.8);}
+.textoproyecto h2{
+	font-family: "Sans-serif", cursive, sans-serif;
+	color: #454dbf;
+	border-block-end-color: #de1717;
+	border-color:#de1717;
 }
-
-.image-container:hover {
-	width: 300px;
-  height: 300px;
-  animation: flicker 1s infinite;
-  background-image: url("/assets/imgs/mateo.png");
-	width: 300px;
-  height: 300px;
-}
-.txtP{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  margin:10px;
-  justify-content: flex-start;
-}
-.txtP p{
-  padding: 1px;
-  margin:1px;
+#para_desarrollo-section{
+	color: #EA899A;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+#root-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    min-height: 90vh;
+}
 
+#root {
+    flex: 1;
+    font-family: "Georgia", sans-serif;
+    display: flex;
+}
+
+/*No coloquen nada debajo de esto *//*No coloquen nada debajo de esto *//*No coloquen nada debajo de esto *//*No coloquen nada debajo de esto *//*Paez pato *//*No coloquen nada debajo de esto */
+.pato{
+  width:100%;
+  height:100px;
+}
 @media only screen and (max-width: 900px) {
   header nav {
     display: none;
@@ -289,17 +262,10 @@ neonImage{
   #hamburger-icon {
     display: block;
   }
-  .members{
-    grid-template-columns: repeat(1,100%);
-    }
+
 }
 @media only screen and (min-width:901px){
-  .members{
-    grid-template-columns: repeat(3,33%);
-    }
-  .displayPersona:hover {
-  transform: scale(1.2);
-  transition: 1s;
-  animation: flicker2 1s infinite;
+
 }
 }
+/*No coloquen nada debajo de esto *//*No coloquen nada debajo de esto *//*No coloquen nada debajo de esto *//*No coloquen nada debajo de esto *//*No coloquen nada debajo de esto *//*No coloquen nada debajo de esto */

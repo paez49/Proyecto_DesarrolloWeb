@@ -7,8 +7,10 @@
       <!----======== CSS ======== -->
       <link rel="stylesheet" href="styles/style.css">
      <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/foot.css">
       <!----===== Boxicons CSS ===== -->
       <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
          rel='stylesheet'>
       <!--<title>Dashboard Sidebar Menu</title>-->
    </head>
@@ -37,7 +39,7 @@
   </div>
 </header>
    <body>
-    <form action="/" class="decor">
+    <form name="miFormulario" onsubmit="return validarFormulario()" id="mi-formulario" class="decor">
       <div class="form-left-decoration"></div>
       <div class="form-right-decoration"></div>
       <div class="circle"></div>
@@ -45,12 +47,37 @@
         <h1>Contactanos</h1>
         <input type="text" placeholder="Adrian Jaimes">
         <input type="email" placeholder="adrian@hotmail.com">
-        <input type="number" placeholder="3131843918">
+        <input type="tel" placeholder="3131843918">
         <textarea placeholder="Mensaje...." rows="5"></textarea>
-        <button type="submit">Enviar</button>
+        <button type="submit" href="/contact.html">Enviar</button>
       </div>
     </form>
   </body>
+ <footer>
+  <div id="footer-wrapper">
+    <div class="socials-wrapper">
+      <img src="" alt="">
+        <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1"><img class="social-icon" src="assets/imgs/replit.png" alt="Replit"></a>
+        <a href="https://github.com/paez49/Proyecto_DesarrolloWeb"><img class="social-icon" src="assets/imgs/github.png" alt="Github"></a>
+    </div>
+    <div class="about-wrapper">
+      <a href="/contact.html" class="about-link"><i class="about-text">Contacto</i></a>
+    </div>
+  </div>
+  <div id="circularMenu" class="circular-menu">
+  <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+    <i class="fa fa-plus"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="https://github.com/paez49/Proyecto_DesarrolloWeb" class="menu-item fa fa-github"></a>
+    <a href="https://github.com/paez49/Proyecto_DesarrolloWeb" class="fa-face-awesome"></a>
+    <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1" class="fa-face-awesome"></a>
+    <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1" class="menu-item fa fa-code"></a>
+  </menu>
+
+</div>
+</footer>
    <script src="scripts/forms.js"></script>
      <script src="scripts/script.js"></script>
 </html>

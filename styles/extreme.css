@@ -1,0 +1,113 @@
+:root {
+  --dot-radius:  30px;
+  --path-radius: 150px;
+  --vp-width:    700px;
+  --vp-height:   700px;
+
+  --static-dot-color: hsl(204, 100%, 65%);
+  --moving-dot-color: hsl(178, 94%, 65%);
+}
+
+
+/* --------------------------------------------------
+   Elements
+   -------------------------------------------------- */
+
+html,
+body,
+main {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #101014;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+main svg{
+
+}
+p {
+  color: var(--static-dot-color);
+}
+
+a {
+  color: var(--moving-dot-color);
+  text-decoration: none;
+}
+a b{
+  font-family: sans-serif;
+  
+}
+.dot {
+  fill: var(--static-dot-color);
+}
+
+.dot--light {
+  fill: var(--moving-dot-color);
+  filter: url('#glow');
+}
+
+.dot--glowing {
+  fill: var(--moving-dot-color);
+  filter: url('#outer-glow');
+}
+
+.scanner {
+  will-change: transform;
+  animation: 3s scan 0s infinite linear both;
+}
+
+.circles {
+  filter: url("#goo");
+}
+
+.centered {
+
+  transform:
+    translate(
+      calc((var(--vp-width) * 0.5) - var(--dot-radius)),
+      calc((var(--vp-height) * 0.5) - var(--dot-radius))
+    );
+}
+
+.credits {
+  margin-bottom: calc(1.5rem * 2);
+  font-family: sans-serif;
+}
+
+@keyframes scan {
+  from {
+    transform: rotate(0deg) translateY(calc(var(--path-radius) * -1)) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateY(calc(var(--path-radius) * -1)) rotate(-360deg);
+  }
+}@media only screen and (max-width: 900px) {
+  
+}
+@media only screen and (min-width:901px){
+  p {
+  color: var(--static-dot-color);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+  
+}

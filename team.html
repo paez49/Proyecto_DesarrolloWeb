@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!----======== CSS ======== -->
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/group.css">
+  <link rel="stylesheet" href="styles/foot.css">
   <!----===== Boxicons CSS ===== -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!--<title>Dashboard Sidebar Menu</title>-->
 </head>
 <header>
@@ -35,8 +38,6 @@
   </div>
 </header>
 <body>
-
-<h2 class = "tituloTeam"> Nuestro nombre es: Grupo1!</h2>
 <div class= "members">
   <div class="person displayPersona">
     <img src="/assets/imgs/mateo.png" alt="Persona 1" class="imagenPresentacion">
@@ -45,10 +46,16 @@
       <p class="textoPersonal"> ◉ Estudiante de Septimo semestre Ingenieria de sistemas </p>
     	<p class="textoPersonal"> ◉ Lider de Planeacion!</p>
     	<p class="textoPersonal"> ◉ Conocimientos en c++, Python y Java</p>
-    	<p class="textoPersonal"> ◉ Se ha destacado por ayudar en proyectos como QuickParked (futura Tesis)</p>
+    	<p class="textoPersonal"> ◉ Se ha destacado por ayudar en proyectos como QuickParked</p>
       <p class="textoPersonal"> ◉ Alguna vez fue champion en rocket league</p>
     	<p class="textoPersonal"> ◉ Gymbro</p>
-  </div></div>
+  </div>
+    <div class="socials">
+      <img src="" alt="">
+        <a href="https://replit.com/@JuanPaez49"><img class="social-icon" src="assets/imgs/replit.png" alt="Replit"></a>
+        <a href="https://github.com/paez49"><img class="social-icon" src="assets/imgs/gitBlanco.png" alt="Github"></a>
+    </div>
+  </div>
   <div class="person displayPersona">
     <img src="/assets/imgs/kev.png" alt="Persona 2" class="imagenPresentacion">
     <h3>Kevyn Orlando Prada Figueroa</h3>
@@ -57,9 +64,15 @@
     	<p class="textoPersonal"> ◉ Conocimientos en c++, Python y Java</p> 
     	<p class="textoPersonal"> ◉ Se ha destacado por su compañerismo y trabajo en equipo</p>
     	<p class="textoPersonal"> ◉ Lider de Pruebas!</p>
-      <p class="textoPersonal"> ◉ Legenda en codmobile 8)</p>
+      <p class="textoPersonal"> ◉ Leyenda en codmobile 8)</p>
     	<p class="textoPersonal"> ◉ El que no estuvo deacuerdo con el estilo de la pagina xd</p>
-  </div> </div>
+  </div>
+    <div class="socials">
+      <img src="" alt="">
+        <a href="https://replit.com/@kevinprada"><img class="social-icon" src="assets/imgs/replit.png" alt="Replit"></a>
+        <a href="https://github.com/koprada"><img class="social-icon" src="assets/imgs/gitBlanco.png" alt="Github"></a>
+    </div>
+  </div>
   <div class="person displayPersona">
     <img src="/assets/imgs/leal.png" alt="Persona 3" class="imagenPresentacion">
     <h3>Santiago Andres Leal Omaña</h3>
@@ -71,9 +84,40 @@
       <p class="textoPersonal"> ◉ No va a clase</p>
     	<p class="textoPersonal"> ◉ Tiene amsiedad</p>
     </div>
+    <div class="socials">
+      <img src="" alt="">
+        <a href="https://replit.com/@lealsa982"><img class="social-icon" src="assets/imgs/replit.png" alt="Replit"></a>
+        <a href="https://github.com/noUsoGitHub"><img class="social-icon" src="assets/imgs/gitBlanco.png" alt="Github"></a>
+    </div>
   </div>
 </div>
+  <div class="pato"></div>
 </body>
+<footer>
+  <div id="footer-wrapper">
+    <div class="socials-wrapper">
+      <img src="" alt="">
+        <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1"><img class="social-icon" src="assets/imgs/replit.png" alt="Replit"></a>
+        <a href="https://github.com/paez49/Proyecto_DesarrolloWeb"><img class="social-icon" src="assets/imgs/github.png" alt="Github"></a>
+    </div>
+    <div class="about-wrapper">
+      <a href="/contact.html" class="about-link"><i class="about-text">Contacto</i></a>
+    </div>
+  </div>
+  <div id="circularMenu" class="circular-menu">
+  <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+    <i class="fa fa-plus"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="https://github.com/paez49/Proyecto_DesarrolloWeb" class="menu-item fa fa-github"></a>
+    <a href="https://github.com/paez49/Proyecto_DesarrolloWeb" class="fa-face-awesome"></a>
+    <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1" class="fa-face-awesome"></a>
+    <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1" class="menu-item fa fa-code"></a>
+  </menu>
+
+</div>
+</footer>
 <script src="/scripts/script.js"></script>
 
 </html>

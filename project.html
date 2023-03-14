@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!----======== CSS ======== -->
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/menuProyect.css">
+  <link rel="stylesheet" href="styles/foot.css">
   <!----===== Boxicons CSS ===== -->
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!--<title>Dashboard Sidebar Menu</title>-->
 </head>
 <header>
@@ -36,46 +39,89 @@
 </header>
 <body>
 <!-- Barra de navegación -->
-<nav class="navbar">
-  <p><a href="#requerimientos-section">Requerimientos</a></p>
-  <p><a href="#descripcion-section">Descripción</a></p>
-  <p><a href="#arquitectura-section">Arquitectura</a></p>
-  <p><a href="#para_desarrollo-section">Para desarrollo</a></p>
-  <p><a href="#pruebas-section">Pruebas</a></p>
-  <p><a href="#despliegue-section">Despliegue</a></p>
-</nav>
+	<div class="sidenav">
+  <a href="#requerimientos-section">Requerimientos</a>
+  <a href="#descripcion-sectio">Descripción proyecto</a>
+  <a href="#arquitectura-section">Arquitectura</a>
+  <a href="#para_desarrollo-section">Para desarrollo</a>
+  <a href="#pruebas-section">Pruebas</a>
+  <a href="#despliegue-section">Despliegue</a>
+</div>
 
 <!-- Contenido principal -->
-<main>
+<div class="main">
+	<div class= "textoproyecto">
+		<div class= "requerimientos1">
   <section id="requerimientos-section">
     <h2>Requerimientos</h2>
-    <p>Este es el contenido de la sección de inicio de mi sitio web.</p>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo expedita impedit nobis maxime, obcaecati explicabo distinctio illum reiciendis debitis nemo veritatis ipsa error velit? Enim deserunt placeat maxime quod!</p>
+		</div>
   </section>
   <section id="descripcion-sectio">
     <h2>Descripción proyecto</h2>
-    <p>Este es el contenido de la sección acerca de mi sitio web.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum libero deleniti, enim facilis nulla tenetur dolorem assumenda, fugit accusamus magni debitis nam maiores quidem? Ducimus voluptatibus dignissimos blanditiis sit! Obcaecati!</p>
   </section>
   <section id="arquitectura-section">
     <h2>Arquitectura</h2>
-    <p>Este es el contenido de la sección de servicios de mi sitio web.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, minima assumenda in sequi mollitia eaque distinctio quod, soluta at labore veniam dolorum sunt impedit voluptas. Necessitatibus dolorem qui sed excepturi.</p>
   </section>
   <section id="para_desarrollo-section">
     <h2>Para desarrollo</h2>
-    <p>Este es el contenido de la sección de contacto de mi sitio web.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veritatis non, assumenda aperiam at nobis asperiores, consequuntur ab beatae laboriosam eos natus harum nemo perspiciatis aut. Iste ratione odio explicabo?</p>
   </section>
   <section id="pruebas-section">
     <h2>Pruebas</h2>
-    <p>Este es el contenido de la sección de contacto de mi sitio web.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis asperiores maiores dolorum commodi, eius earum tempora ut doloremque animi nemo dolores itaque? Corporis sed rem iure qui vitae fugiat.</p>
   </section>
   <section id="despliegue-section">
     <h2>Despliegue</h2>
-    <p>Este es el contenido de la sección de contacto de mi sitio web.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat libero quaerat error modi cumque, similique animi, delectus in esse velit voluptatibus eligendi expedita distinctio cupiditate accusantium. Itaque sequi odio repudiandae!</p>
   </section>
-</main>
+</div>
+</div>
 
 <!-- Limpieza -->
 <div id="clearfix"></div>
 </body>
-<script src="scripts/script.js"></script>
+<footer>
+  <div id="circularMenu1" class="circular-menu circular-menu-left">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="#" class="menu-item fa fa-home"></a>
+    <a href="#" class="menu-item fa fa-user"></a>
+    <a href="#" class="menu-item fa fa-pie-chart"></a>
+    <a href="#" class="menu-item fa fa-cog"></a>
+  </menu>
+
+</div>
+  <div id="footer-wrapper">
+    <div class="socials-wrapper">
+      <img src="" alt="">
+        <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1"><img class="social-icon" src="assets/imgs/replit.png" alt="Replit"></a>
+        <a href="https://github.com/paez49/Proyecto_DesarrolloWeb"><img class="social-icon" src="assets/imgs/github.png" alt="Github"></a>
+    </div>
+    <div class="about-wrapper">
+      <a href="/contact.html" class="about-link"><i class="about-text">Contacto</i></a>
+    </div>
+  </div>
+  <div id="circularMenu" class="circular-menu">
+  <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+    <i class="fa fa-plus"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="https://github.com/paez49/Proyecto_DesarrolloWeb" class="menu-item fa fa-github"></a>
+    <a href="https://github.com/paez49/Proyecto_DesarrolloWeb" class="fa-face-awesome"></a>
+    <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1" class="fa-face-awesome"></a>
+    <a href="https://replit.com/@JuanPaez49/ProyectoWebR?v=1" class="menu-item fa fa-code"></a>
+  </menu>
+
+</div>
+</footer>
+  <script src="scripts/script.js"></script>
 
 </html>

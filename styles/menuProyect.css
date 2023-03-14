@@ -1,0 +1,86 @@
+
+.circular-menu.circular-menu-left {
+  right: auto; 
+  left: 1em;
+}
+
+.circular-menu.circular-menu-left .floating-btn {
+  background-color: hsl(217, 89%, 61%);
+}
+
+.circular-menu.circular-menu-left:after {
+  background-color: hsl(217, 89%, 61%);
+}
+
+.circular-menu.circular-menu-left.active .floating-btn i {
+  transform: rotate(90deg);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(1) {
+  transform: translate3d(-1em,-7em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(2) {
+  transform: translate3d(3.5em,-6.3em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(3) {
+  transform: translate3d(6.5em,-3.2em,0);
+}
+
+.circular-menu.circular-menu-left.active .menu-item:nth-child(4) {
+  transform: translate3d(7em,1em,0);
+}
+
+.sidenav {
+  height: 80%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  bottom:100px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.main{
+  margin-top:10px;
+  margin-right:10px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .sidenav {
+    display: none;
+  }
+
+  .circular-menu.circular-menu-left{
+    display: block;
+  }
+  .main {
+  margin-left: 10px; 
+}
+}
+@media only screen and (min-width:901px){
+  .circular-menu.circular-menu-left{
+    display: none;
+  }
+  .main {
+  margin-left: 210px; /* Same as the width of the sidenav */
+}
+}
+}
